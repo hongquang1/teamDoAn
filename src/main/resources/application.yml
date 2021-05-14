@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+          clientId: 469943327971-8fffetdpa31q51a14goo387d6pqeoclj.apps.googleusercontent.com
+          clientSecret: laQBokIMxK_DGhk1iF4qpmNN
+          scope:
+           - email
+           - profile
