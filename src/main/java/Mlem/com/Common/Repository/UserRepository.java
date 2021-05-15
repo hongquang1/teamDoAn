@@ -6,7 +6,7 @@ import org.springframework.data.repository.query.Param;
 import Mlem.com.Common.Entity.Provider;
 import Mlem.com.Common.Entity.User;
 
-public interface UserRepository extends CrudRepository<User, Integer> {
+public interface UserRepository extends CrudRepository<User, Long> {
 
 	@Query("SELECT u FROM User u WHERE u.email = :email AND u.provider = :auth_provider")
 	public User getUserByEmail(@Param("email") String email,

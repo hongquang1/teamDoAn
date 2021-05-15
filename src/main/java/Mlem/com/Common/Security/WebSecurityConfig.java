@@ -88,7 +88,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 						User newUser = new User();
 						newUser.setEmail(oauthUser.getEmail());
 					    newUser.setProvider(Provider.GOOGLE);
-					    newUser.setRole(0);
+					    newUser.setRole(1);
+					    newUser.setEnable(true);
 						newUser.setFullName(oauthUser.getName());	
 						userService.processOAuthPostLogin(newUser);
 						

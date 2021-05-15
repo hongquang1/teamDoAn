@@ -18,7 +18,9 @@ public class User {
 @Column(name = "user_id")
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
+@Column(name = "role_id")
 private int role;
+
 private String email;
 @Column(name = "full_name")
 private String fullName;

@@ -13,7 +13,7 @@ public class UserService {
 	
 	public void processOAuthPostLogin(User user) {
 		User existUser = repo.getUserByEmail(user.getEmail(),user.getProvider());
-		System.out.print("find user"+existUser);
+     	System.out.print("find user"+existUser);
 		
 		if (existUser == null) {	
 			
